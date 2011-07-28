@@ -1,0 +1,19 @@
+alias v='mvim'
+alias g='git'
+alias r='rails'
+alias b='bundle exec'
+alias u='bundle exec unicorn'
+
+alias ls='gls --color'
+
+alias gpush='git push'
+alias gpull='git pull'
+alias gcommit='git commit -m'
+
+alias gs='git status'
+alias ga='git add'
+alias gc='git checkout'
+alias gb='git branch'
+
+alias go='passenger start'
+alias dbm='rake db:migrate'
