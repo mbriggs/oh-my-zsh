@@ -1,3 +1,6 @@
+#aparently llvm-gcc doesn't play well with ruby
+export CC=gcc-4.2
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -14,6 +17,5 @@ plugins=(brew bundler cake cap compleat gem git github lein rails3 rvm)
 source $ZSH/oh-my-zsh.sh
 source $ZSH/aliases
 
-export PATH=/Users/matt/.rvm/gems/ruby-1.9.2-p180/bin:/Users/matt/.rvm/gems/ruby-1.9.2-p180@global/bin:/Users/matt/.rvm/rubies/ruby-1.9.2-p180/bin:/Users/matt/.rvm/bin:/Users/matt/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Users/matt/scripts:/Users/matt/.clojure:/usr/local/Cellar/ruby/1.9.2-p180/bin
-
+export PATH=$HOME/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/scripts
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
