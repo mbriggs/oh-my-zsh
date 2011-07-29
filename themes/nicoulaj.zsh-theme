@@ -13,8 +13,8 @@
 
 # Customizable parameters.
 PROMPT_PATH_MAX_LENGTH=30
-PROMPT_DEFAULT_END=\)\ 
-PROMPT_ROOT_END=\)\)\)\ 
+PROMPT_DEFAULT_END=→
+PROMPT_ROOT_END=→
 PROMPT_SUCCESS_COLOR=$FG[071]
 PROMPT_FAILURE_COLOR=$FG[124]
 PROMPT_VCS_INFO_COLOR=$FG[242]
@@ -102,11 +102,11 @@ function git_time_since_commit() {
             fi
 
             if [ "$HOURS" -gt 24 ]; then
-                echo "%{$fg[yellow]%}$(rvm_prompt)%{$reset_color%} $COLOR${DAYS}d${SUB_HOURS}h${SUB_MINUTES}m%{$reset_color%} "
+                echo "|%{$fg[yellow]%}$(rvm_prompt)%{$reset_color%} $COLOR${DAYS}d${SUB_HOURS}h${SUB_MINUTES}m%{$reset_color%} "
             elif [ "$MINUTES" -gt 60 ]; then
-                echo "%{$fg[yellow]%}$(rvm_prompt)%{$reset_color%} $COLOR${HOURS}h${SUB_MINUTES}m%{$reset_color%} "
+                echo "|%{$fg[yellow]%}$(rvm_prompt)%{$reset_color%} $COLOR${HOURS}h${SUB_MINUTES}m%{$reset_color%} "
             else
-                echo "%{$fg[yellow]%}$(rvm_prompt)%{$reset_color%} $COLOR${MINUTES}m%{$reset_color%} "
+                echo "|%{$fg[yellow]%}$(rvm_prompt)%{$reset_color%} $COLOR${MINUTES}m%{$reset_color%} "
             fi
         else
             COLOR="$ZSH_THEME_GIT_TIME_SINCE_COMMIT_NEUTRAL"
