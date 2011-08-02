@@ -1,10 +1,8 @@
-alias v='mvim'
+alias v='gvim'
 alias g='git'
 alias r='rails'
 alias b='bundle exec'
 alias u='bundle exec unicorn'
-
-alias ls='gls --color'
 
 alias gpush='git push'
 alias gpull='git pull'
