@@ -67,7 +67,7 @@ function rvm_gemset() {
 }
 
 function rvm_prompt() {
-  echo `rvm-prompt v g`
+  echo `rvm-prompt v g | sed s/packmanager_//`
 }
 
 # Determine the time since last commit. If branch is clean,
