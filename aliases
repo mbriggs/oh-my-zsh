@@ -1,17 +1,19 @@
-alias v='gvim'
+alias v='mvim'
 alias g='git'
 alias r='rails'
 alias b='bundle exec'
 alias u='bundle exec unicorn'
 
-alias gpush='git push'
-alias gpull='git pull'
-alias gcommit='git commit -m'
-
 alias gs='git status'
 alias ga='git add'
 alias gc='git checkout'
 alias gb='git branch'
+alias gm='git merge --no-ff'
 
-alias go='passenger start'
-alias dbm='rake db:migrate'
+alias go='bundle exec passenger start'
+alias rv='rvm current'
+alias dm='bundle exec rake db:migrate'
+
+alias gpush='git push'
+alias gpull='git pull'
+alias gcommit='git commit -m'
