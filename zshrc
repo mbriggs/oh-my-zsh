@@ -1,5 +1,5 @@
 #aparently llvm-gcc doesn't play well with ruby
-export CC=gcc-4.2
+#export CC=gcc-4.2
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

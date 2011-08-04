@@ -1,4 +1,4 @@
-alias v='mvim'
+alias v='gvim'
 alias g='git'
 alias r='rails'
 alias b='bundle exec'
@@ -9,6 +9,8 @@ alias ga='git add'
 alias gc='git checkout'
 alias gb='git branch'
 alias gm='git merge --no-ff'
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %C'"
+alias gw='git whatchanged'
 
 alias go='bundle exec passenger start'
 alias rv='rvm current'
