@@ -1,4 +1,4 @@
-alias v='gvim'
+alias v='mvim'
 alias g='git'
 alias r='rails'
 alias b='bundle exec'
