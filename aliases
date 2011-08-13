@@ -12,8 +12,11 @@ alias gm='git merge --no-ff'
 
 alias go='bundle exec passenger start'
 alias rv='rvm current'
+alias cl='clear'
 alias dm='bundle exec rake db:migrate'
 
 alias gpush='git push'
 alias gpull='git pull'
+alias gdiff='git difftool'
+alias gmerge='git mergetool'
 alias gcommit='git commit -m'
