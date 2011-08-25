@@ -3,6 +3,7 @@ alias g='git'
 alias r='rails'
 alias b='bundle exec'
 alias u='bundle exec unicorn'
+alias s='spork testunit'
 
 alias gs='git status'
 alias ga='git add'
