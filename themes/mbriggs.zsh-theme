@@ -16,7 +16,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}✓%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SHA_BEFORE=" %{$fg[yellow]%}"
 ZSH_THEME_GIT_PROMPT_SHA_AFTER="%{$reset_color%}"
 
-local rvm_ruby='%{$fg[red]%}$(rvm-prompt v)%{$reset_color%}'
+local rvm_ruby='%{$fg[red]%}$(rvm-prompt i)%{$reset_color%}'
 local user_host="%{$fg[green]%}%m%{$reset_color%}"
 local current_path='%{$fg[cyan]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_short_sha)$(git_prompt_info)'
