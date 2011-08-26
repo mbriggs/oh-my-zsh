@@ -89,8 +89,8 @@ local user_host="%{$fg[green]%}%m%{$reset_color%}"
 local current_path='%{$fg[cyan]%}%~%{$reset_color%}'
 local git_branch='$(git_prompt_short_sha)$(git_prompt_info)'
 local n_commands='%{$fg[blue]%}%!%{$reset_color%}'
-local prompt_seperator='%{%}'
+local prompt_symbol='%{$fg_bold[white]%}λ%{$reset_color%}'
 
 PROMPT="
-${user_host}  λ  ${rvm_ruby}  ::  ${current_path} ${git_branch}  ${return_status}
+${user_host}  ${prompt_symbol}  ${rvm_ruby}  ::  ${current_path} ${git_branch}  ${return_status}
 ${n_commands} : "
