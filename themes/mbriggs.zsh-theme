@@ -93,4 +93,4 @@ local prompt_seperator='%{%}'
 
 PROMPT="
 ${user_host}  λ  ${rvm_ruby}  ::  ${current_path} ${git_branch}  ${return_status}
-${n_commands} $(prompt_char) : "
+${n_commands} : "
