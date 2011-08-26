@@ -1,13 +1,13 @@
 # -----------------------------------------------------------------------------
-#          FILE: smt.zsh-theme
-#   DESCRIPTION: oh-my-zsh theme file, based on dogenpunk by Matthew Nelson.
-#        AUTHOR: Stephen Tudor (stephen@tudorstudio.com
-#       VERSION: 0.1
-#    SCREENSHOT: coming soon
+#          FILE: mbriggs.zsh-theme
+#            BY: Matt Briggs (matt@mattbriggs.net)
+#
+#      BASED ON: smt.zsh-theme
+#            BY: Stephen Tudor (stephen@tudorstudio.com)
 # -----------------------------------------------------------------------------
 
 MODE_INDICATOR="%{$fg_bold[red]%}❮%{$reset_color%}%{$fg[red]%}❮❮%{$reset_color%}"
-local return_status="%{$fg[red]%}%(?..⏎)%{$reset_color%} "
+local return_status="%{$fg_bold[red]%}%(?..!!!!)%{$reset_color%}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="|%{$fg[cyan]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
@@ -92,7 +92,5 @@ local n_commands='%{$fg[blue]%}%!%{$reset_color%}'
 local prompt_seperator='%{%}'
 
 PROMPT="
-${user_host}  λ  ${rvm_ruby}  ::  ${current_path} ${git_branch}
+${user_host}  λ  ${rvm_ruby}  ::  ${current_path} ${git_branch}  ${return_status}
 ${n_commands} $(prompt_char) : "
-
-RPROMPT='${return_status}$(git_prompt_status)%{$reset_color%}'
