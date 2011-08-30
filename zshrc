@@ -17,5 +17,7 @@ plugins=(brew bundler cake cap compleat gem git github lein rails3 rvm)
 source $ZSH/oh-my-zsh.sh
 source $ZSH/aliases
 
+touch /tmp/vim.log
+
 export PATH=$HOME/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/scripts
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
