@@ -1,9 +1,13 @@
-alias v='mvim'
+if [[ `uname` == "Darwin" ]] then
+  alias v='mvim'
+else
+  alias v='gvim'
+fi
+
 alias g='git'
 alias r='rails'
 alias b='bundle exec'
 alias u='bundle exec unicorn'
-alias s='spork testunit'
 
 alias gs='git status'
 alias ga='git add'

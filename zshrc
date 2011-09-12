@@ -1,7 +1,12 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="mbriggs"
 
-[[ `uname` == "Darwin" ]] && export CC=gcc-4.2
+if [[ `uname` == "Darwin" ]] then
+  export CC=gcc-4.2
+  export EDITOR=mvim
+else
+  export EDITOR=gvim
+fi
 
 
 plugins=(brew bundler cake cap compleat gem git github lein rails3 rvm)
