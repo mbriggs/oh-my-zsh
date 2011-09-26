@@ -8,8 +8,7 @@ else
   export EDITOR=gvim
 fi
 
-
-plugins=(brew bundler cake cap compleat gem git github lein rails3 rvm)
+# plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/aliases
