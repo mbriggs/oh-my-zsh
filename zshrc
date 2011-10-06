@@ -4,6 +4,7 @@ ZSH_THEME="mbriggs"
 if [[ `uname` == "Darwin" ]] then
   export CC=gcc-4.2
   export EDITOR=mvim
+  eval `gdircolors ~/.dir_colors`
 else
   export EDITOR=gvim
 fi
