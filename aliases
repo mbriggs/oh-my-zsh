@@ -1,5 +1,6 @@
 if [[ `uname` == "Darwin" ]] then
   alias v='mvim'
+  alias ls='gls --color'
 else
   alias v='gvim'
 fi
