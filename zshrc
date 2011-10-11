@@ -5,8 +5,11 @@ if [[ `uname` == "Darwin" ]] then
   export CC=gcc-4.2
   export EDITOR=mvim
 else
+  export TERM=xterm-256color
   export EDITOR=gvim
 fi
+
+eval `dircolors ~/.dircolors`
 
 # plugins=(git)
 

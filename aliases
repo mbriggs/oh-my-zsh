@@ -13,14 +13,15 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git checkout'
 alias gb='git branch'
-alias gm='git merge --no-ff'
-alias gw='git whatchanged'
+alias gm='git merge'
+alias gmff='git merge --no-ff'
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias go='bundle exec passenger start'
 alias rv='rvm current'
 alias cl='clear'
-alias dm='bundle exec rake db:migrate'
+
+alias rake='bundle exec rake'
 
 alias gpush='git push'
 alias gpull='git pull'
