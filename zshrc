@@ -8,9 +8,9 @@ if [[ `uname` == "Darwin" ]] then
 else
   export TERM=xterm-256color
   export EDITOR=gvim
+  eval `dircolors ~/.dir_colors`
 fi
 
-eval `dircolors ~/.dircolors`
 
 # plugins=(git)
 
