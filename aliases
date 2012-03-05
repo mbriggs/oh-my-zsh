@@ -7,6 +7,7 @@ fi
 
 alias g='git'
 alias r='rails'
+alias s='rails s thin'
 alias b='bundle exec'
 alias u='bundle exec unicorn'
 
@@ -16,6 +17,7 @@ alias gc='git checkout'
 alias gb='git branch'
 alias gm='git merge'
 alias gmff='git merge --no-ff'
+alias gf='git flow'
 
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 alias go='bundle exec passenger start'
