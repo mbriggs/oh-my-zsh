@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git pull robby master
+git push origin master
