@@ -24,6 +24,7 @@ export DISABLE_UPDATE_PROMPT="true"
 
 source $ZSH/oh-my-zsh.sh
 source $ZSH/aliases
+unsetopt correct_all
 
 export PATH=$HOME/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$HOME/scripts
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
